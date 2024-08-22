@@ -1,0 +1,12 @@
+# 수 찾기
+
+n = int(input())
+t1 = set(map(int, input().split()))
+m = int(input())
+t2 = list(map(int,  input().split()))
+
+for j in t2:
+    if j in t1:
+        print(1)
+    else:
+        print(0)
