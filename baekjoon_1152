@@ -1,0 +1,4 @@
+# 단어의 개수
+
+t = input().split()
+print(len(t))
