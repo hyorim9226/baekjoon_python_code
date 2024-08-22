@@ -1,0 +1,11 @@
+# 평균
+
+n = int(input())
+t = list(map(int, input().split()))
+m = max(t)
+t1 = []
+for i in t:
+    t1.append((i/m)*100)
+
+k = sum(t1)
+print(k/n)
