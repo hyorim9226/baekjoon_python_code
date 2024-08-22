@@ -1,0 +1,4 @@
+# 2진수 8진수
+
+n = int(input(),2) # bin(input())?
+print(oct(n)[2:]) # print("%o" %bin(n))? 
