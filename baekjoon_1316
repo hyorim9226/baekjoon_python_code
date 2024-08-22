@@ -1,0 +1,21 @@
+# 그룹 단어 체커
+
+n=0
+for _ in range(int(input())):
+    s=input()
+    real=True
+    se=set()
+    se.add(s[0])
+    last=s[0]
+    for i in s[1:]:
+        if i==last:
+            continue
+        if i in se:
+            real=False
+            break
+        else:
+            se.add(i)
+            last=i
+    if real:
+        n+=1
+print(n)
