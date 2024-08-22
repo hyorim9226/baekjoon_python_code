@@ -1,0 +1,20 @@
+# 나는야 포켓몬 마스터 이다솜
+
+# import sys
+# input = sys.stdin.readline
+
+t = []
+check = []
+a, b = map(int, input().split())
+for i in range(a):
+    t.append(input())
+  
+for j in range(b):
+    check.append(input())
+
+for j in check:
+    try:
+        j = int(j)
+        print(t[j-1])
+    except:
+        print(t.index(j)+1)
