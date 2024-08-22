@@ -1,0 +1,12 @@
+# 단어 정렬
+
+n = int(input())
+t = [set() for i in range(51)]
+for _ in range(n):
+    a = input()
+    t[len(a)].add(a)
+t=list(map(sorted,map(list,t)))
+
+for i in t:
+    if i:
+        for j in i:print(j)
