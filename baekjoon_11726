@@ -1,0 +1,5 @@
+#2xn 타일링
+
+d=[1,2];n=int(input())
+for _ in ' '*(n-2):d.append((d[-1]+d[-2])%10007)
+print(d[-1] if n-1 else 1)
