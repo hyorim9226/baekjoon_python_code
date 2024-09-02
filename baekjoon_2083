@@ -1,0 +1,11 @@
+# 럭비 클럽
+
+while True:
+    a, b, c =input().split()
+    if a == "#":
+        break
+    else: #Junior Senior
+        if int(b)>17 or int(c)>=80:
+            print(a, 'Senior')
+        else:print(a,'Junior')
+            
